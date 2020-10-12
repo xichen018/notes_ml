@@ -50,7 +50,8 @@ from sklearn.preprocessing import Normalizer
 #归一化，返回值为归一化后的数据
 Normalizer().fit_transform(iris.data)
 ```
-## 1.2 对定量特征二值化　　定量特征二值化的核心在于设定一个阈值，大于阈值的赋值为1，小于等于阈值的赋值为0，公式表达如下：<img src="https://pic1.zhimg.com/50/11111244c5b69c1af6c034496a2591ad_hd.jpg?source=1940ef5c" data-rawwidth="159" data-rawheight="41" class="content_image" width="159"/>　　使用preproccessing库的Binarizer类对数据进行二值化的代码如下：
+## 1.2 对定量特征二值化　　
+定量特征二值化的核心在于设定一个阈值，大于阈值的赋值为1，小于等于阈值的赋值为0，公式表达如下：<img src="https://pic1.zhimg.com/50/11111244c5b69c1af6c034496a2591ad_hd.jpg?source=1940ef5c" data-rawwidth="159" data-rawheight="41" class="content_image" width="159"/>　　使用preproccessing库的Binarizer类对数据进行二值化的代码如下：
 ```
 from sklearn.preprocessing import Binarizer
 #二值化，阈值设置为3，返回值为二值化后的数据
